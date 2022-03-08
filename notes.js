@@ -2,7 +2,7 @@ const fs = require('fs');
 
 var fetchNotes = () => {
   try {
-    return JSON.parse(fs.readFileSync('notes.txt'));
+    return JSON.parse(fs.readFileSync('notes.json'));
   } catch (err) {
     return [];
   }
@@ -21,7 +21,7 @@ var addingNote = (title, body) => {
   if(double.length === 0){
     notes.push(note);
 
-    fs.writeFileSync("notes.txt", JSON.stringify(notes));
+    fs.writeFileSync("notes.json", JSON.stringify(notes));
 
     logNote(note);
   } else {
@@ -34,7 +34,7 @@ var removeNote = (title) => {
 
   var filteredNotes = notes.filter((note) => note.title !== title);
 
-  fs.writeFileSync("notes.txt", JSON.stringify(filteredNotes));
+  fs.writeFileSync("notes.json", JSON.stringify(filteredNotes));
 }
 
 var readNote = (title) => {

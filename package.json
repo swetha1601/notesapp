@@ -1,13 +1,21 @@
 {
   "name": "notesapp",
   "version": "1.0.0",
-  "description": "notes taking app",
-  "main": "script.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swetha1601/notesapp.git"
+  },
   "author": "swetha",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swetha1601/notesapp/issues"
+  },
+  "homepage": "https://github.com/swetha1601/notesapp#readme",
   "dependencies": {
     "yargs": "^17.3.1"
   }
