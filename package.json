@@ -1,0 +1,14 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "notes taking app",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "swetha",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.3.1"
+  }
+}
